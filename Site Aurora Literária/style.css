@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #E5E5E5;
+}
+
+header img {
+    height: 160px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+header input {
+    height: 40px;
+    width: 700px;
+    border: none;
+    border-radius: 10px;
+}
+
+.cabecalho-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer {
+    background-color: #6A1B9A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

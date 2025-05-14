@@ -1,0 +1,21 @@
+.menu {
+    background-color: #6A1B9A;
+    color: #ffffff;
+    border: 1px solid;
+    display: flex;
+}
+
+.item-menu {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.item-menu:hover {
+    background-color: #4a148c;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
