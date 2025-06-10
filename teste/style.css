@@ -1,0 +1,214 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffafa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header e navegação */
+  header {
+    background-color: #5700df;
+    padding: 15px 30px;
+    box-shadow: 0 3px 5px rgba(87, 0, 223, 0.3);
+  }
+
+  header img {
+    width: 90px;
+    height: 100px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #D9822B;
+  }
+  
+  /* Seção Inicial */
+  .inicio-content {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #5700df 0%, #d9822b 100%);
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .inicio-content h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  /* Linha do tempo */
+  #timeline {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  #timeline h2 {
+    color: #5700df;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .timeline-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .timeline-item {
+    background: #f0e6ff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(87, 0, 223, 0.15);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .timeline-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(87, 0, 223, 0.4);
+  }
+  
+  .timeline-item .year {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #5700df;
+  }
+  
+  /* Curiosidades - carrossel simples */
+  #curiosidades {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  #curiosidades h2 {
+    color: #5700df;
+    margin-bottom: 25px;
+  }
+  
+  .curiosidades-carousel {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .curiosidade {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #333;
+  }
+  
+  .curiosidade.ativa {
+    opacity: 1;
+    position: relative;
+  }
+  
+  /* Galeria de fotos */
+  #galeria {
+    max-width: 900px;
+    margin: 50px auto 80px auto;
+    padding: 0 20px;
+  }
+  
+  #galeria h2 {
+    color: #5700df;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(87, 0, 223, 0.3);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #5700df;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+.icons-row {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.icons-row span {
+    cursor: default;
+    transition: transform 0.3s;
+}
+
+.icons-row span:hover {
+    transform: scale(1.2);
+}
+  
+  
+/* Responsividade simples */
+@media (max-width: 600px) {
+.timeline-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    width: 90%;
+}
+
+.gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+  
